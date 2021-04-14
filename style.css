@@ -1,0 +1,56 @@
+body {
+  background-color: #fff;
+}
+.jumbotron {
+  padding-top: 200px;
+}
+
+.jumbotron h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg {
+  min-height: 400px;
+  background-color: #f3f4f5;
+}
+
+#about {
+  padding-top: 100px;
+  margin-bottom: 200px;
+}
+
+#skill {
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+#contact {
+  margin-bottom: 130px;
+  padding-top: 100px;
+}
+
+.footer {
+  padding-left: 0;
+  padding-right: 10;
+}
+
+.typed-cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
