@@ -23,9 +23,9 @@
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm p-3 mb-5 bg-body rounded" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow-sm p-3 mb-5 rounded" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="#home">Andika Restu Saputra</a>
+        <a href=""><img src="img/myLogo.png" alt="Andika Restu Saputra" class="logo" width="60px" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fas fa-bars fa-lg mt-2"></i></span>
         </button>
@@ -65,26 +65,25 @@
     <!-- Jumbotron -->
     <div class="bg">
       <div class="jumbotron">
-        <div class="container" style="background-color: #f3f4f5">
+        <div class="container">
           <div class="row justify-content-center">
-            <div class="col">
-              <h1 class="display-4 fw-bold">Hey, I'm <span id="typed" class="typed"></span></h1>
+            <div class="row justify-content-center">
+              <div class="col mb-4 text-center d-block d-md-none d-lg-none d-xl-none">
+                <img src="img/myPhoto.jpg" alt="Andika Restu Saputra" width="250" class="rounded-circle" />
+              </div>
+            </div>
+            <div class="col text-main">
+              <h6 class="before-line">HELLO</h6>
+              <h1 class="display-4 fw-bold">I'm <span id="typed" class="typed"></span></h1>
               <p class="lead">Network Engineering | Web Developer</p>
             </div>
             <div class="col-5 text-center d-none d-md-block d-lg-block d-xl-block">
-              <img src="img/my.jpg" alt="Andika Restu Saputra" width="300" class="rounded-circle" />
+              <img src="img/myPhoto.jpg" alt="Andika Restu Saputra" width="330" class="rounded-circle" />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#f3f4f5"
-        fill-opacity="1"
-        d="M0,224L48,192C96,160,192,96,288,64C384,32,480,32,576,74.7C672,117,768,203,864,208C960,213,1056,139,1152,106.7C1248,75,1344,85,1392,90.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-      ></path>
-    </svg>
     <!-- Akhir Jumbotron -->
 
     <!-- About -->
@@ -92,7 +91,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-11">
-            <h2 class="text-center">About Me</h2>
+            <h2 class="text-center mb-4">About Me</h2>
           </div>
           <div class="row">
             <div class="col text-center fs-5">
@@ -142,25 +141,9 @@
           </div>
           <div class="col-md-3 mb-3">
             <div class="card">
-              <img src="img/skill/java.jpg" class="card-img-top" alt="Java" />
-              <div class="card-body">
-                <h5 class="card- fw-bold">Java</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card">
               <img src="img/skill/php.jpg" class="card-img-top" alt="PHP" />
               <div class="card-body">
                 <h5 class="card- fw-bold">PHP</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card">
-              <img src="img/skill/python.png" class="card-img-top" alt="Pyhton" />
-              <div class="card-body">
-                <h5 class="card- fw-bold">Python</h5>
               </div>
             </div>
           </div>
@@ -174,9 +157,9 @@
           </div>
           <div class="col-md-3 mb-3">
             <div class="card">
-              <img src="img/skill/as.jpg" class="card-img-top" alt="VS Code" />
+              <img src="img/skill/cisco.jpg" class="card-img-top" alt="Cisco" />
               <div class="card-body">
-                <h5 class="card- fw-bold">Android Studio</h5>
+                <h5 class="card- fw-bold">Cisco</h5>
               </div>
             </div>
           </div>
@@ -211,17 +194,27 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-8">
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address *</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Success!</strong> Pesan Anda Telah Terkirim
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <div class="mb-3">
-              <label for="pesan" class="form-label">Message *</label>
-              <textarea class="form-control" id="pesan" rows="5"></textarea>
-            </div>
-            <div class="mb-3">
-              <input type="submit" value="Sumbit" class="btn btn-dark text-light fw-bold" />
-            </div>
+            <form name="contact-form-myPortfolio">
+              <div class="mb-3">
+                <label for="email" class="mb-3">Email address *</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="mb-3">Message </label>
+                <textarea class="form-control" id="pesan" rows="5" name="pesan"></textarea>
+              </div>
+              <div class="mb-3">
+                <input type="submit" value="Sumbit" class="btn fw-bold btn-kirim" />
+                <button class="btn btn-loading d-none" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -230,27 +223,45 @@
 
     <!-- footer -->
     <div class="footer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#262626"
-          fill-opacity="1"
-          d="M0,288L48,293.3C96,299,192,309,288,293.3C384,277,480,235,576,197.3C672,160,768,128,864,149.3C960,171,1056,245,1152,245.3C1248,245,1344,171,1392,133.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-      <div class="text-light p-1 text-center bg-dark">
-        <p class="mt-2 lead" style="font-size: smaller">Designed and built with all the love in the world by the <a href="#home" class="link-light fw-bold">Andika Restu Saputra</a></p>
+      <div class="p-1 text-center">
+        <p class="pt-3 lead">Made with <i class="fas fa-heart" style="color: #03dac5"></i> by <span>Andika Restu Saputra</span> © 2021</p>
+        <p>Built with <a target="_blank" href="https://getbootstrap.com/">Bootstrap</a></p>
       </div>
     </div>
     <!-- akhir footer -->
 
     <script>
       new Typed("#typed", {
-        strings: ["Andika Restu Saputra", "a Network Engineering", "a Web Developer"],
+        strings: ["Andika Restu Saputra", "Network Engineering", "Web Developer"],
         typeSpeed: 100,
         delaySpeed: 100,
         loop: true,
       });
     </script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwaEkp1rSwxNxyRuk5OfIXkAH1DbGNj_Tfhtmw15yayh6KxKa5lTs5bB56Tiwwk0PcEuQ/exec";
+      const form = document.forms["contact-form-myPortfolio"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        btnKirim.classList.toggle("d-none");
+        btnLoading.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            btnKirim.classList.toggle("d-none");
+            btnLoading.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
 </html>
